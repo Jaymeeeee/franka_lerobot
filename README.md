@@ -6,6 +6,7 @@ Use for control franka by lerobot
 
 ### 最小可行框架
 
+```text
 franka_lerobot/
 ├── ros2_bridge/
 ├── obs/
@@ -13,10 +14,12 @@ franka_lerobot/
 ├── control/
 ├── utils/
 ├── configs/
-├── scripts/
+└── scripts/
+```
 
 ### 完整框架
 
+```text
 franka_lerobot/
 ├── configs/
 ├── ros2_bridge/
@@ -27,45 +30,48 @@ franka_lerobot/
 ├── utils/
 ├── scripts/
 ├── launch/
-├── requirements.txt / pyproject.toml
+└── requirements.txt / pyproject.toml
+```
 
 ### 各模块作用
 
+```text
 ros2_bridge/
 ├── obs_subscriber.py
 ├── action_publisher.py
 ├── camera_listener.py
-├── robot_state_listener.py
+└── robot_state_listener.py
 
 obs/
 ├── obs_builder.py
 ├── image_processor.py
 ├── state_processor.py
-├── sync.py
+└── sync.py
 
 policies/
 ├── lerobot_policy.py
 ├── policy_wrapper.py
 ├── model_loader.py
-├── inference.py
+└── inference.py
 
 control/
 ├── base_controller.py
 ├── franka_controller.py
 ├── moveit_controller.py
-├── gripper_controller.py
+└── gripper_controller.py
 
 utils/
 ├── transforms.py
 ├── normalization.py
 ├── timer.py
-├── logger.py
+└── logger.py
 
 configs/
 ├── robot.yaml
 ├── camera.yaml
 ├── policy.yaml
-├── control.yaml
+└── control.yaml
+```
 
 ## 数据流
 
