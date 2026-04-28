@@ -75,21 +75,23 @@ configs/
 
 ## 数据流
 
+```text
 ROS2 topics
-     ↓
+  ↓
 ros2_bridge
-     ↓
+  ↓
 Observation dict
-     ↓
+  ↓
 obs module
-     ↓
+  ↓
 policy (LeRobot)
-     ↓
+  ↓
 action dict
-     ↓
+  ↓
 control module
-     ↓
+  ↓
 Franka robot
+```
 
 ## Topic 命名规范（草案）
 
